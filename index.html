@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">🌟 My Interactive Website</h1>
+    <p id="clock">Loading time...</p>
+
+    <div class="greeting-section fade-in">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="greetUser()">Greet Me</button>
+      <p id="greetingMsg"></p>
+    </div>
+
+    <button onclick="toggleTheme()">🌓 Toggle Dark/Light Mode</button>
+
+    <!-- Extra Info Toggle -->
+    <div class="extra-info-section">
+      <button onclick="toggleExtraInfo()">ℹ️ Show More Info</button>
+      <div id="extraInfo" class="hidden">
+        <h2>About This Site</h2>
+        <ul>
+          <li>Made with HTML, CSS, JavaScript</li>
+          <li>Live clock, greeting, theme toggle</li>
+          <li>Responsive image gallery included</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 📷 Image Gallery -->
+    <div class="gallery-section">
+      <h2>📸 Image Gallery</h2>
+      <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" />
+        <img src="image2.jpg" alt="Image 2" />
+        <img src="image3.webp" alt="Image 3" />
+        <img src="image4.jpg" alt="Image 4" />
+      </div>
+    </div>
+</div>
+
+
+  <script src="node.js"></script>
+</body>
+</html>
